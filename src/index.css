@@ -1,0 +1,321 @@
+
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-item {
+  margin: 0 10px;
+}
+
+.navbar-item button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.navbar-item button:hover {
+  background-color: green;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; 
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup,
+.login {
+  flex: 1;
+  margin: 0 10px; 
+}
+
+/* Login Form */
+.login h2,
+.signup h2 {
+  margin-bottom: 20px;
+}
+
+.login input,
+.signup input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login button,
+.signup button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login button:hover,
+.signup button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Footer */
+.footer-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px; 
+  margin: auto; 
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+}
+.welcome-paragraph {
+  font-size: 16px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+/* AccountOverviewPage.css */
+
+.account-page {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.account-type {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.policy-section {
+  margin-top: 30px;
+}
+
+.policy-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.policy-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.policy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* EnquiryPage.css */
+
+.enquiry-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.enquiry-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.enquiry-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.enquiry-page p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.enquiry-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.enquiry-page form div {
+  margin-bottom: 15px;
+}
+
+.enquiry-page form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.enquiry-page form input,
+.enquiry-page form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.enquiry-page form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enquiry-page form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.logo {
+  width: 100px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+.bank-name {
+  overflow: hidden;
+  border-right: 0.15em solid orange; /* Typing cursor */
+  white-space: nowrap; /* Keep text in one line */
+  margin-right: 10px; /* Add margin for better spacing */
+  animation: typing 1s steps(40, end); /* Typing animation */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./bank123.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+
+.all-data-page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fallback background color */
+}
+
+.all-data-page h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.all-data-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.all-data-page li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.all-data-page li strong {
+  color: #333;
+}
+
+.all-data-page li span {
+  color: #666;
+}
